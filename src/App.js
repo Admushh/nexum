@@ -6,7 +6,9 @@ import Navbar from './components/navbar'
 import Home from './views/home'
 import LogIn from './views/login'
 import Register from './views/register';
+import About from './views/About'
 import Main from './views/main';
+import Contact from './views/contact'
 
 const RedirectHome = () => {
   const navigate = useNavigate();
@@ -43,6 +45,8 @@ function App() {
         <Route path="/home" element={ <Home/> } />
         <Route path="/login" element={ <LogIn/> } />
         <Route path="/register" element={ <Register/> } />
+        <Route path="/about" element={ <About/> } />
+        <Route path="/contact" element={ <Contact/> } />
         <Route path="/main" element={  !currentUser ? <RedirectLogIn /> : <Main/> } />
       </Routes>
     </div>

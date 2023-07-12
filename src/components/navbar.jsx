@@ -8,8 +8,8 @@ import { AuthContext } from '../scripts/AuthContext'
 const Navbar = () => {
     let Links =[
       {name:"SERVICE",link:"/"},
-      {name:"ABOUT",link:"/"},
-      {name:"CONTACT",link:"/"},
+      {name:"ABOUT",link:"/About"},
+      {name:"CONTACT",link:"/contact"},
     ];
     let [open,setOpen]=useState(false);
 
